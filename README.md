@@ -1,47 +1,38 @@
-# Team 1 Project
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-**UNDER CONSTRUCTION**
-<br/>
-<br/>
-## Languages and tools
+## Getting Started
 
-- Built with [Next.js](https://nextjs.org) and [React](https://reactjs.org)
-
-
-## Running Locally
-
-To run this project, install it locally using npm:
+First, run the development server:
 
 ```bash
-# Clone repository
-git clone https://github.com/WiT-CohortX/Team1-projectX.git
-
-# Enter file
-cd Team1-projectX
-
-# Install all packages
-npm install
-
-# Start project
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-## Contributing
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-```bash
-# 1. Make sure you have the main update
-git pull origin main
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-# 2. Create a new branch
-git checkout -b 'frontend-01'
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-# 3. Add and commit all changes to your branch
-git add
-git commit -m "feat: add a new package"
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-# 4. Push all commits to your branch
-git push origin 'frontend-01'
-```
+## Learn More
 
-After that, go to the main repo on GitHub where you should now see your new branch, create a “Pull Request” for merge your branch with the main branch, and, ask another person in the group to review the code.
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

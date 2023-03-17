@@ -16,11 +16,6 @@ const signUpValidationSchema = Yup.object({
     .label("Password")
     .min(8, "Must be more than 8 characters")
     .required(),
-  confirm_password: Yup.string()
-    .label("Confirm password")
-    .required()
-    .oneOf([Yup.ref("password"), null], "Passwords must match")
-    .min(8, "Must be more than 8 characters"),
   checkedAgree: Yup.bool()
     .oneOf([true], "You must agree to something")
     .required(),
@@ -39,7 +34,6 @@ export default function SignUp() {
       initialValues={{
         email: "",
         password: "",
-        confirm_password: "",
         checkedAgree: false,
       }}
       onSubmit={handleSubmit}
@@ -58,13 +52,6 @@ export default function SignUp() {
           <TextInput
             label={"Password"}
             name={"password"}
-            placeholder={"Must have at least 8 characters"}
-            type={"password"}
-            required
-          />
-          <TextInput
-            label={"Confirm password"}
-            name={"confirm_password"}
             placeholder={"Must have at least 8 characters"}
             type={"password"}
             required
