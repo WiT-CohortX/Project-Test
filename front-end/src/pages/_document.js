@@ -1,3 +1,4 @@
+import { SkipLink } from '@/components/common/skipLink'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -6,7 +7,8 @@ export default function Document() {
       <Head>
         <link href="/favicon.png" rel="icon" sizes="any" type="image/png" />
       </Head>
-      <body className="p-4">
+      <body>
+        <SkipLink />
         <Main />
         <NextScript />
       </body>

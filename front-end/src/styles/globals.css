@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    .logo {
+      @apply text-6xl font-extrabold text-center mt-14 mb-8
+    }
+    .h1 {
+      @apply text-Primary font-bold text-4xl text-center mb-8 mt-14;
+    }
+    .h2 {
+      @apply 
+    }
+    .simpleLink {
+      @apply underline text-Gray700 font-medium
+    }
+    .backgroundLink {
+      @apply py-2 px-4 mb-6 w-full text-white font-semibold shadow-lg rounded-full bg-gradient-to-r from-Primary via-Primary to-Secondary700 text-center
+    }
+  }
+
+@layer utilities {
+    .height {
+      min-height: 100svh;
+    }
+}
